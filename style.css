@@ -102,6 +102,8 @@ button:hover{
     display:flex;
     flex-direction: column;
     
+    
+    
 }
 .body-title{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -109,7 +111,8 @@ button:hover{
     font-weight: bolder;
     text-align: center;
     padding-bottom: 20px;
-    margin-top: -350px
+    
+   
 }
 .img-text-wrapper{
     
@@ -117,6 +120,9 @@ button:hover{
     flex-wrap: wrap;
     flex:1;
     gap:50px;
+    align-self: start;
+    
+    
 }
 .img-txt{
     display:flex;
@@ -124,12 +130,19 @@ button:hover{
     flex-direction: column;
     flex:1;
     text-align: center;
+    font-weight: bold;
+    gap:15px;
+    
     /* Fix zoom proportion for imgs */
+
+    
     
 }
 .img-txt img{
     width: auto;
-    height:200px;
+    height:400px;
+    order:-1;
+   
    
 }
 .quote{
@@ -143,12 +156,33 @@ button:hover{
 
 }
 .call-wrapper{
-    width:400px;
+    width:1200px;
     height:120px;
     background: #3882F6;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    border-radius: 5px;
+    margin-top:30px;
+    margin-bottom:30px;
+    
+    
+    
     /* Figure out how to move box to center with margins */
+}
+.call-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:30px;
+}
+.bold-font{
+    font-weight: bold;
+}
+.call-right{
+    display:flex;
+    margin:30px;
+    align-items: center;
 }
 .call-wrapper button{
     background-color: white;
