@@ -101,6 +101,9 @@ button:hover{
 .body-wrapper{
     display:flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin:0
+    
     
     
     
@@ -111,27 +114,27 @@ button:hover{
     font-weight: bolder;
     text-align: center;
     padding-bottom: 20px;
-    
-   
 }
 .img-text-wrapper{
-    
     display:flex;
-    flex-wrap: wrap;
-    flex:1;
-    gap:50px;
-    align-self: start;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: center;
+    
+    
+    /* align-self: start; */
+    /* prevents images from stretching */
     
     
 }
 .img-txt{
     display:flex;
-    padding:5px;
     flex-direction: column;
-    flex:1;
-    text-align: center;
-    font-weight: bold;
-    gap:15px;
+    height:425;
+    width:auto;
+    border:2px solid #3882F6;
+    border-radius: 5px;
+    padding:5px;
     
     /* Fix zoom proportion for imgs */
 
@@ -142,8 +145,6 @@ button:hover{
     width: auto;
     height:400px;
     order:-1;
-   
-   
 }
 .quote{
     display:flex;
@@ -155,16 +156,21 @@ button:hover{
     align-items: center;
 
 }
+.content-wrapper{
+    /* This give .call classes positioning on the page, independently from other components */
+    display: flex;
+    justify-content: center;
+    margin:20px;
+
+}
 .call-wrapper{
     width:1200px;
     height:120px;
     background: #3882F6;
     display:flex;
     justify-content: space-between;
-    margin-left: 300px;
     border-radius: 5px;
-    margin-top:30px;
-    margin-bottom:30px;
+   
     
     
     
